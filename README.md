@@ -4,7 +4,7 @@ This repository contains the reference implementation of **LaPha**, a method for
 in a **prompt-centered Poincaré latent space**, enabling dense process reward shaping and lightweight value-guided
 test-time scaling.
 
-> Paper: *Latent Poincaré Shaping for Agentic Reinforcement Learning* (https://arxiv.org/abs/2602.09375)
+> Paper: *Latent Poincaré Shaping for Agentic Reinforcement Learning* (https://arxiv.org/pdf/2602.09375)
 
 <p align="center">
   <img src="assets/fig1_overview.png" width="900" alt="LaPha overview (Figure 1)"/>
@@ -141,7 +141,7 @@ trl vllm-serve \
 
 ```bash
 ENGINE=vllm BASE_URL=http://localhost:8000 \
-TOKENIZER_PATH=LaPha-Math-7B \
+TOKENIZER_PATH=Qwen/Qwen2.5-Math-1.5B \
 MODE=single \
 bash eval.sh math
 ```
